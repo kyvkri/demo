@@ -1,2 +1,2 @@
 # demo
-A test prject for Github.
+A test project for Github.
