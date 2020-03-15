@@ -18,7 +18,7 @@ jobs:
     name: SonarCloud Trigger
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@master
+      - uses: actions/checkout@v2
       - name: SonarCloud Scan
         run: mvn -B sonar:sonar -Dsonar.host.url=https://sonarcloud.io -Dsonar.organization=kyvkri --file pom.xml
         env:
