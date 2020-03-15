@@ -15,6 +15,8 @@ jobs:
         java-version: 11
     - name: Build and run JUnit
       run: mvn -B clean install
+    - name: Run integration tests
+      run: mvn -B verify
     - name: SonarCloud Scan
       run: mvn -B clean package sonar:sonar -Dsonar.host.url=https://sonarcloud.io -Dsonar.organization=kyvkri -Dsonar.projectKey=kyvkri_demo
       env:
