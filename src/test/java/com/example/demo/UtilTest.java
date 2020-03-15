@@ -4,10 +4,13 @@ import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
 
 @SpringBootTest
-class DemoApplicationTest {
+class UtilTest {
 
 	@Test
-	void contextLoads() {
+	void getNumberTest() {
+
+		Util.getNumber();
+
 	}
 
 }
